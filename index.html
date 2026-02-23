@@ -244,10 +244,10 @@
     }
 
     .mirror-p {
-      font-family: 'Playfair Display', serif;
-      font-size: 21px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 18px;
       font-weight: 400;
-      font-style: italic;
+      font-style: normal;
       color: var(--text);
       line-height: 1.85;
       margin-bottom: 24px;
@@ -668,6 +668,148 @@
       display: block;
       margin-top: 2px;
     }
+
+    /* ─── MOBILE ─────────────────────────────────────── */
+    @media (max-width: 768px) {
+      :root {
+        --w: 100%;
+      }
+
+      .wrap {
+        padding: 0 24px;
+      }
+
+      /* Cover */
+      .cover-top {
+        padding: 32px 24px 0;
+      }
+
+      .cover-mid {
+        padding: 40px 24px 36px;
+      }
+
+      .cover-bottom {
+        padding: 20px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .cover-h1 {
+        font-size: 34px;
+      }
+
+      .cover-sub {
+        font-size: 15px;
+      }
+
+      .logo {
+        height: 40px;
+      }
+
+      .badge {
+        font-size: 9px;
+        padding: 5px 10px;
+      }
+
+      /* Seções */
+      .s-mirror,
+      .s-threats,
+      .s-cost,
+      .s-worlds,
+      .s-solution,
+      .s-cta {
+        padding: 56px 0;
+      }
+
+      .section-title {
+        font-size: 26px;
+      }
+
+      .section-lead {
+        font-size: 15px;
+        margin-bottom: 32px;
+      }
+
+      /* Ameaças */
+      .threat-card {
+        padding: 18px 16px;
+        gap: 14px;
+      }
+
+      .t-num {
+        font-size: 28px;
+        width: 28px;
+      }
+
+      .t-body h3 {
+        font-size: 14px;
+      }
+
+      .t-body p {
+        font-size: 13px;
+      }
+
+      /* Custo */
+      .cost-big {
+        font-size: 56px;
+      }
+
+      .cost-item {
+        padding: 14px 16px;
+      }
+
+      /* Dois mundos — empilha vertical */
+      .worlds-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      /* Pilares — empilha vertical */
+      .pillars {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      /* Espelho */
+      .mirror-p {
+        font-size: 16px;
+      }
+
+      .mirror-box {
+        padding: 20px 22px;
+      }
+
+      /* CTA */
+      .cta-title {
+        font-size: 30px;
+      }
+
+      .cta-body {
+        font-size: 15px;
+      }
+
+      .cta-box {
+        padding: 22px 22px;
+      }
+
+      .cta-inner {
+        text-align: left;
+      }
+
+      .cta-eyebrow {
+        text-align: left;
+      }
+
+      .cta-sig {
+        justify-content: flex-start;
+      }
+
+      /* Solução */
+      .solution-banner {
+        padding: 22px 22px;
+      }
+    }
   </style>
 </head>
 
@@ -869,7 +1011,7 @@
           <div class="ci-arrow">&#8594;</div>
           <div class="ci-text">
             <strong>Sem taxa travada antes dos cortes da Selic</strong>
-            <p>R$ 300 mil em renda fixa sem estrat&eacute;gia pode deixar de render entre R$ 15 mil e R$ 25 mil por ano
+            <p>R$ 300 mil em renda fixa sem estrat&eacute;gia pode deixar de render R$ 45 mil por ano
               quando os cortes chegarem. E o Banco Central j&aacute; confirmou: come&ccedil;am em mar&ccedil;o.</p>
           </div>
         </div>
@@ -888,7 +1030,7 @@
           <div class="ci-arrow">&#8594;</div>
           <div class="ci-text">
             <strong>Sem prote&ccedil;&atilde;o patrimonial</strong>
-            <p>Uma a&ccedil;&atilde;o trabalhista, um problema soiet&aacute;rio, um invent&aacute;rio mal estruturado.
+            <p>Uma a&ccedil;&atilde;o trabalhista, um problema societ&aacute;rio, um invent&aacute;rio mal estruturado.
               Sem blindagem adequada, o que voc&ecirc; levou anos construindo pode ser comprometido em meses.</p>
           </div>
         </div>
@@ -949,7 +1091,7 @@
             <li>Dinheiro parado at&eacute; decidir o que fazer, e o dia nunca chega</li>
             <li>Reage a cada not&iacute;cia sem ter b&uacute;ssola pr&oacute;pria</li>
             <li>N&atilde;o sabe o lucro real da empresa todo m&ecirc;s</li>
-            <li>Trabalha muito mas n&atilde;o acumula na propor&ccedil;&atilde;o</li>
+            <li>Trabalha muito, mas n&atilde;o acumula na propor&ccedil;&atilde;o que gostaria</li>
             <li>Posterga decis&otilde;es financeiras porque parecem complexas</li>
             <li>Paga mais IR do que deveria, todo m&ecirc;s</li>
             <li>Cada ano que passa &eacute; mais um ano de custo invis&iacute;vel acumulado</li>
@@ -971,7 +1113,8 @@
 
       <div class="solution-banner">
         <p>
-          <strong>A Invest4U n&atilde;o &eacute; corretora. N&atilde;o ganhamos comiss&atilde;o de produto.</strong><br>
+          <strong>A Invest4U n&atilde;o &eacute; corretora. N&atilde;o empurramos produtos e n&atilde;o ganhamos com a
+            sua perda.</strong><br>
           Somos uma consultoria financeira independente. O &uacute;nico interesse que temos &eacute; que voc&ecirc;
           fique mais rico, mais protegido e com mais paz financeira.
           Nossa renda vem do seu resultado, n&atilde;o da sua compra.
@@ -982,7 +1125,7 @@
 
         <div class="pillar">
           <div class="pillar-num">01</div>
-          <h3>Diagn&oacute;se Patrimonial Completa</h3>
+          <h3>Diagn&oacute;stico Patrimonial Completo</h3>
           <p>Mapeamos tudo: empresa, pessoa f&iacute;sica, investimentos, d&iacute;vidas, risco tribut&aacute;rio e
             exposi&ccedil;&atilde;o cambial. Voc&ecirc; vai saber mais sobre sua situa&ccedil;&atilde;o financeira do
             que qualquer banco j&aacute; mostrou.</p>
@@ -999,7 +1142,7 @@
           <div class="pillar-num">03</div>
           <h3>Prote&ccedil;&atilde;o e Blindagem Patrimonial</h3>
           <p>Estrutura jur&iacute;dica e financeira para proteger o que voc&ecirc; construiu. Sucess&atilde;o,
-            testamento, prote&ccedil;&atilde;o soiet&aacute;ria. Antes que voc&ecirc; precise, porque depois &eacute;
+            testamento, prote&ccedil;&atilde;o societ&aacute;ria. Antes que voc&ecirc; precise, porque depois &eacute;
             tarde.</p>
         </div>
 
